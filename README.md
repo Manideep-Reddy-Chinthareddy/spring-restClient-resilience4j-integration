@@ -12,7 +12,7 @@ Instead of relying on AOP annotations like `@CircuitBreaker` or `@Retry`, this i
     *   **Retry**: Automatically retries failed requests with configurable backoff.
     *   **Bulkhead**: Limits the number of concurrent calls to a specific service.
     *   **TimeLimiter**: Enforces a time limit on the execution of the request.
-*   **Java 23 & Spring Boot 4 (Milestone)**: leveraging the latest language features and framework updates.
+*   **Java 25 & Spring Boot 4 (Milestone)**: leveraging the latest language features and framework updates.
 
 ## Getting Started
 
