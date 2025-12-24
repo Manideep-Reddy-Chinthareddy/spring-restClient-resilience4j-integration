@@ -53,7 +53,10 @@ public class R4jConfig {
 
         properties.getCircuitbreaker().getInstances().forEach((key, value) -> {
             CircuitBreakerConfig.Builder builder = CircuitBreakerConfig.custom();
-
+            // We are adding some of the properties to the builder, but
+            // if needed you can add all the properties to the builder as needes, just lazy
+            // to type them out.
+            // But you get the Idea :)
             builder.slidingWindowType(value.getSlidingWindowType());
             builder.slidingWindowSize(value.getSlidingWindowSize());
             builder.permittedNumberOfCallsInHalfOpenState(value.getPermittedNumberOfCallsInHalfOpenState());
